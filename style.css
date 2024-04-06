@@ -128,3 +128,45 @@ p{
     gap: 10px;
     font-family:  'PT Mono', monospace;
 }
+
+@media (max-width:520px){
+    nav{
+        gap: 30px;
+    }
+    .nav-title li{
+        font-size: 15px;
+    }
+.sobre {
+    padding-top: 30px;
+    width: 290px;
+    flex-direction: column;
+
+}
+
+.texto-shows{
+    display: flex;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 60px;
+    gap: 10px;
+    font-family:  'PT Mono', monospace;
+}
+
+.imagens {
+    display: none;
+}
+h1{
+    font-size: 35px;
+
+}
+li{
+    font-size: 20px;
+    
+}
+.logo {
+    width: 60px;
+    height: auto;
+    padding: 0%;
+}
+   
+}
