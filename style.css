@@ -1,41 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 nav{
     display: flex;
     justify-content: center;
+    padding: 20px;
+    gap: 15px;
 }
 
-ul{
+.nav-title{
     display: flex;
     gap: 20px;
+    /* padding-top: 50px; */
     list-style-type: none;
     align-items: center;
     color: white;
     font-family:  'PT Mono', monospace;
+} 
+
+.nav-title li{
+    color: white;
+    padding-top: auto;
 }
 body {
     background-color: black;
 }
 
-article{
+article {
     display: flex;
     flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 150px;
 
-    /* justify-content: space-between; */
+}
+
+img {
+    width: 500px;
+    height: auto;
+    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    padding: 0%;
 }
     
 .sobre {
-    border: 1px solid white;
+    height: auto;
     display: flex;
-    /* justify-content: center; */
+    padding-top: 100px;
+    width: 290px;
     flex-direction: column;
     color: white;   
     font-family:  'PT Mono', monospace;
 }
 
+/* linha branca do titulo */
+.linha{
+    background-color: #ffffff;
+    height: 2px;
+    width: 200px;
+    margin-top: 8px;
+}
+
+.linha-sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 h1{
     display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 20px;
     color: #008515;
-    font-size: 40px;
+    font-size: 45px;
+    font-family:  'PT Mono', monospace;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    height: 35px;
+    color: #008515;
+    font-size: 20px;
+    font-family:  'PT Mono', monospace;
+}
+p{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 60px;
+    gap: 10px;
+    font-family:  'PT Mono', monospace;
+}
+
+.texto-shows{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #ffffff;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 60px;
+    gap: 10px;
     font-family:  'PT Mono', monospace;
 }
