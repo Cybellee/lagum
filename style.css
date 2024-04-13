@@ -3,7 +3,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 nav{
     display: flex;
@@ -22,7 +24,9 @@ nav{
     font-family:  'PT Mono', monospace;
 } 
 
-.nav-title li{
+.nav-title li a{
+    font-style: none;
+    text-decoration: none;
     color: white;
     padding-top: auto;
 }
@@ -39,12 +43,12 @@ article {
 
 }
 
-img {
+div > img {
     width: 500px;
     height: auto;
-    padding-bottom: 75px;
-    padding-top: 50px;
-    padding-left: 50px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .imagens{
@@ -64,10 +68,10 @@ img {
     height: auto;
     display: flex;
     padding-top: 100px;
-    width: 290px;
     flex-direction: column;
     color: white;   
     font-family:  'PT Mono', monospace;
+    line-height: 30px;
 }
 
 /* linha branca do titulo */
@@ -80,10 +84,10 @@ img {
 
 .linha-sobre{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    /* width: 200PX; */
 }
 
 h1{
@@ -129,6 +133,106 @@ p{
     font-family:  'PT Mono', monospace;
 }
 
+h3{
+    color: #ffffff;
+    font-size: 64px;
+    font-family:  'PT Mono', monospace;
+}
+label{
+    color: #ffffff;
+    font-family:  'PT Mono', monospace;
+}
+
+body > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px ;
+    gap: 30px;
+}
+
+section > img{
+    height: 60px;
+}
+
+section > article {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0px;
+    font-family:  'PT Mono', monospace;
+    gap: 0px;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    font-family:  'PT Mono', monospace;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    gap: 20px;
+}
+
+form div input{
+    width: 400px;
+    height: 50px;
+    border: 2px solid #008515;
+    color: #ffffff;
+    background-color: black;
+    font-size: 20px;
+}
+
+form div input:focus{
+    border-color: #008515;
+}
+.btn-enviar input{
+    background-color: #008515;
+    color: #ffffff;
+    font-size: 20px;
+    width: auto;
+    padding: 15px 30px;
+    box-shadow: 5px 5px 0px #747474;
+    cursor: pointer;
+}
+footer{
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    gap: 50px;
+    background-color: #008515;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    text-align: center;
+    font-family:  'PT Mono', monospace;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-footer{
+    display: inline;
+    justify-content: center;
+    width: 40px;
+}
+
+
+
 @media (max-width:520px){
     nav{
         gap: 30px;
@@ -138,7 +242,7 @@ p{
     }
 .sobre {
     padding-top: 30px;
-    width: 290px;
+    /* width: 290px; */
     flex-direction: column;
 
 }
@@ -170,3 +274,4 @@ li{
 }
    
 }
+
